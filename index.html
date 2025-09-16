@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-in-out;
+    }
+  </style>
+</head>
+<body class="relative bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 min-h-screen flex items-center justify-center font-sans overflow-hidden">
+
+  <div class="absolute top-10 left-10 w-72 h-72 bg-purple-300 rounded-full filter blur-3xl opacity-30"></div>
+  <div class="absolute bottom-10 right-10 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-30"></div>
+
+  <div class="max-w-md w-full bg-white rounded-2xl shadow-2xl p-8 relative overflow-hidden transform transition duration-500 hover:-translate-y-2 hover:shadow-3xl animate-fadeInUp">
+
+    <div class="flex justify-center">
+      <img src="foto profil.jpg" alt="foto profil"
+           class="w-32 h-32 rounded-full border-4 border-indigo-400 shadow-md hover:scale-105 transition-transform duration-300">
+    </div>
+
+    <div class="text-center mt-4">
+      <h1 class="text-3xl font-extrabold bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
+        Aprilia Kananti
+      </h1>
+      <p class="text-gray-500 text-sm">Siswa SMKN 08 Malang</p>
+    </div>
+
+
+    <div class="mt-6">
+      <h2 class="font-semibold text-lg text-gray-700 mb-2">Tentang Saya</h2>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Saya adalah pelajar yang memiliki minat di bidang teknologi dan pemrograman.
+        Saat ini saya fokus mempelajari HTML, CSS, dan dasar desain web untuk membangun 
+        pondasi yang kuat di dunia web development. Bagi saya, pemrograman adalah cara untuk 
+        berkreasi sekaligus melatih logika dalam menciptakan solusi yang bermanfaat.
+      </p>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="font-semibold text-lg text-gray-700 mb-3">Keahlian Utama</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:scale-105 transition">HTML</span>
+        <span class="px-3 py-1 bg-blue-200 rounded-full text-sm font-medium hover:scale-105 transition">CSS</span>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="font-semibold text-lg text-gray-700 mb-3">Hubungi Saya</h2>
+      <p class="text-sm">
+        <a href="https://instagram.com/clyzliaa_" class="flex items-center text-blue-600 hover:underline">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+         alt="" class="w-6 h-6 mr-2">
+         IG</a>
+      </p>
+      <p class="text-sm mt-1">
+        <a href="mailto:apriliakananti5@gmail.com"  class="flex items-center text-blue-600 hover:underline">
+           <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" 
+         alt="" class="w-6 h-6 mr-2"> email</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
